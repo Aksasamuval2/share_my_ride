@@ -1,0 +1,65 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Signika&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #164F82;
+    --secondary-color: black;
+    --text-color: rgb(12, 12, 12);
+    --font-primary: 'Acme', sans-serif;
+    --font-secondary: 'Signika', sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    background-color: #080808;
+    line-height: 1.6;
+}
+
+/* Top Navbar */
+.topnavbar {
+    background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+    font-family: var(--font-primary);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Text Top */
+.text_top {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+/* Car Booking */
+.carbooking {
+    color: var(--text-color);
+    padding: 0.5em 1em;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.carbooking:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .topnavbar {
+        flex-direction: column;
+    }
+
+    .text_top {
+        font-size: 1.2em;
+    }
+}
